@@ -39,7 +39,7 @@ jobs:
                     file: ./Dockerfile.resotobase
                     platforms: linux/amd64
                     push: ${{ github.event_name != 'pull_request' }}
-                    tags: matomo:latest
+                    tags: ghcr.io/lloesche/matomo:latest
                     cache-from: type=local,src=/tmp/.buildx-cache
                     cache-to: type=local,dest=/tmp/.buildx-cache-new
 
