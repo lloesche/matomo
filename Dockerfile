@@ -16,3 +16,4 @@ RUN ln -s /var/www/html/matomo.php /var/www/html/m.php \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 ENTRYPOINT [ "/usr/bin/dumb-init", "--", "/usr/local/sbin/startup" ]
+CMD [ "apache2-foreground" ]
