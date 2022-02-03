@@ -1,0 +1,1 @@
+*/15 * * * * www-data /usr/local/bin/php /var/www/html/console core:archive --url=http://webmat.some.engineering/ > /var/log/apache2/matomo-archive.log 2>&1
